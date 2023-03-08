@@ -1,7 +1,7 @@
-str_data = 'This is a String';
+strData = 'This is a String';
 
-bool_data = true
+boolData = true
 
-undefined_data = undefined;
+undefinedData = undefined;
 
-null_data = null;
+nullData = null;

@@ -6,6 +6,6 @@ console.log(typeof 5);
 
 console.log(typeof 4.55);
 
-null_data = null;
+nullData = null;
 
-console.log(typeof null_data);
+console.log(typeof nullData);
