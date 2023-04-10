@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 23</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .num-box {
+            font-size: 40px;
+            font-weight: 700;
+            color: white;
+            border: 2px solid white;
+            text-align: center;
+        }
+
+        body{
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+
+<body id="body">
+
+    <label for="nums">Number of blocks: 
+        <input type="number" name="nums" id="nums">
+    </label>
+    <button type="submit" id="go">Submit</button>
+
+    <div class="container" id="pattern"></div>
+
+    <div class="container d-flex justify-content-center p-3 border border-2 border-danger text-4 rounded-lg text-primary" id="keyText">Press a key please</div>
+    <div class="container d-flex justify-content-center p-3">
+        <div class="d-block mx-auto border border-primary text-danger p-3 rounded-lg" id="keyCharacter">
+            key character
+        </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
