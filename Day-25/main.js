@@ -46,7 +46,8 @@ const table = document.querySelector('#chart');
 document.querySelector('#show-language').addEventListener('click', () => {
 
 	table.innerHTML = '';
-
+	document.querySelector('#title-text').innerText = '10 Most spoken languages in the world';
+	
 	for (let i = 0; i < languageCounts.length && i < 10; i++) {
 		const row = document.createElement('tr');
 		const nameCell = document.createElement('td');
@@ -58,24 +59,25 @@ document.querySelector('#show-language').addEventListener('click', () => {
 		nameCell.classList.add('country-name');
 		graphCell.classList.add('country-graph');
 		countCell.classList.add('country-count');
-
+		
 		nameCell.innerText = languageCounts[i].language;
 		bar.innerText = '.';
 		countCell.innerText = languageCounts[i].count;
-
+		
 		graphCell.appendChild(bar);
 		row.appendChild(nameCell);
 		row.appendChild(graphCell);
 		row.appendChild(countCell);
-
+		
 		table.appendChild(row);
 	}
-
+	
 });
 
 document.querySelector('#show-population').addEventListener('click', () => {
-
+	
 	table.innerHTML = '';
+	document.querySelector('#title-text').innerText = '10 Most populated countries in the world';
 	const row = document.createElement('tr');
 	const nameCell = document.createElement('td');
 	const bar = document.createElement('div');
