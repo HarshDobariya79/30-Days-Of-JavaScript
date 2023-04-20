@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 27</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        .jumbotron{
+            padding: 2rem 1rem;
+        }
+
+        #role{
+            animation-name: role-animation;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes role-animation {
+            from {
+                transform: translateX(-20%);
+                opacity: 0.4;
+            }
+            to {
+                transform: translateX(20%);
+                opacity: 1;
+            }
+        }
+
+        #skill{
+            animation-name: skill-animation;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes skill-animation {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body id="body">
+
+    <div class="container">
+        <div class="display-3 mt-5 mb-3 text-dark">Harsh Dobariya</div>
+        <div class="jumbotron d-flex flex-row">
+            <img src="./api.png" id="role-img" alt="fire" width="30px" height="30px">
+            <div class="m-1" id="role">Postman Student Expert</div>
+        </div>
+        <div class="text-dark">
+            Hi, I'm a computer science and engineering student with a strong foundation in backend programming using <b>C, C++, and Python</b>, as well as frontend development using <b>HTML, CSS, Bootstrap, and JavaScript</b>. I also have proficient database skills in <b>SQL</b> and a thorough understanding of <b>computer networks</b>. In addition to my technical skills, I am a <b>competitive coder</b> and a problem solver with a passion for tackling challenging projects. I am looking to leverage my skills and experience to make a positive impact in the tech industry.
+        </div>
+        <div class="row mt-4 mb-5 text-center">
+            <div class="col-4">
+                <div class="card pt-5 pb-5 px-3 bg-light">
+                    JAVASCRIPT FOR EVERYONE
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card pt-5 pb-5 px-3 bg-light">
+                    JAVASCRIPT FOR EVERYONE
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card pt-5 pb-5 px-3 bg-light">
+                    JAVASCRIPT FOR EVERYONE
+                </div>
+            </div>
+        </div>
+        <div class="text-dark">The technologies I teach <span class="h2 font-weight-bolder" id="skill" style="color:#82cda8;">JAVASCRIPT</span> </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
