@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 28</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        .date {
+            font-size: 12px;
+        }
+
+        .round-buttons {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body id="body">
+
+    <div class="container">
+        <div class="text-center h1 mt-4 text-dark">30 Days Of JavaScript Challenge Leaderboard</div>
+        <form action="">
+            <table class="d-flex justify-content-center mt-4 mb-3">
+                <tr>
+                    <td>
+                        <input type="text" class="p-1 border-info" placeholder="First Name" id="firstName">
+                    </td>
+                    <td>
+                        <input type="text" class="p-1 border-info" placeholder="Last Name" id="lastName">
+                    </td>
+                    <td>
+                        <input type="text" class="p-1 border-info" placeholder="Country" id="country">
+                    </td>
+                    <td>
+                        <input type="number" class="p-1 border-info" placeholder="Player Score" id="score">
+                    </td>
+                    <td>
+                        <input type="button" type="submit" class="btn btn-dark" value="Add Player" id="addPlayer">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="warning text-center text-danger font-weight-bold mb-4" id="input-warning">All fields are required
+        </div>
+        <div id="players-data">
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
